@@ -95,6 +95,5 @@ function savegame(req,res) {
 	
 	res.end()
 }
-//mongodb+srv://adrian:adrian1234@rockpaperscissors.q1iotus.mongodb.net/?retryWrites=true&w=majority
 
 server.listen(3000)
