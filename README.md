@@ -1,11 +1,35 @@
 # Projects Repository
 
-Welcome to my projects repository! This contains a collection of various interactive applications and games built with different technologies. Below is a detailed breakdown of each project.
+Welcome to my projects repository! This contains a collection of various interactive applications and games built with different technologies over course of many years. Below is a detailed breakdown of each project!
 
 ---
 
 ## 📁 Project Overview
 
+### 0. **Queen Archive ("Keep Yourself Archive")** 👑
+**Live Site:** [QueenArchive.com](https://queenarchive.com)  
+**Source Code:** This project is **not included in this repository** because it has its own separate GitHub repository: [Wearily/queena](https://github.com/Wearily/queena)  
+**Language:** JavaScript / TypeScript  
+**Stack:** Web app project with a separate dedicated codebase
+
+**What it does:**
+Queen Archive is a fan-built archival website focused on the band Queen. It is designed to organize and present information about songs, albums, tours, performances, and related material in a structured and searchable way.
+
+**How it works:**
+- The site collects and organizes Queen-related archival information into a browsable web experience
+- Content is grouped in a way that helps users explore relationships between releases, performances, and other historical details
+- It is built as a standalone project with its own repository because it is larger and more complex than the smaller sample projects in this portfolio
+
+**Why it is separate from this repo:**
+This repository is mainly a collection of smaller projects and experiments. Queen Archive is a much larger long-term project, so I keep it in its own dedicated repository to make the codebase easier to manage and maintain.
+
+**Features:**
+- Live public website: [QueenArchive.com](https://queenarchive.com)
+- Comprehensive archive focused on Queen’s history, discography, concerts, and legacy
+- Dedicated concert entries with venue, date, and performance details
+- Browsable sections covering albums, live performances, interviews, and related archival content
+- Searchable, structured archive experience for exploring relationships across releases and performances
+- Standalone long-term project with its own dedicated repository and codebase
 ### 1. **Chatroom** 💬
 **Language:** Node.js (JavaScript)  
 **Stack:** Express.js, Socket.io, EJS
