@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Data | Rock Paper Scissors </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Rock Paper Scissors Data</h1>
+    <a href="/">Go Back</a>
+    <div id = "mypiechart">
+      <canvas id="myChart" width="500" height="500"></canvas>
+    </div>
+
+    <div id = "mybargraph">
+      <canvas id="myGraph" width="500" height="500"></canvas>
+    </div>
+		
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		
+		<script>
+const ctx = document.getElementById('myChart');
+const ctx2 = document.getElementById('myGraph');
+
+var config = {
+  type: 'pie',
+  data: {
+    labels: ['Win', 'Lose',],
+    datasets: [{
+      data: [<%=piechartdata%>],
+      backgroundColor: [
+        'rgb(36, 252, 3)',
+        'rgb(255, 99, 132)'
+      ],
+      hoverOffset: 4
+  }]
+  },
+  options: {
+    plugins: {
+      title: {
+                display: true,
+                text: 'Player Win/Loss'
+      }
+    }
+  }
+}
+var config2 = {
+  type: 'bar',
+  data: {
+    labels: ['Rock', 'Paper','Scissors'],
+    datasets: [{
+      label: "Most Played Moves",
+      data: [<%= barchartdata %>],
+      backgroundColor: [
+      'rgba(255, 99, 132, 0.5)',
+      'rgba(255, 205, 86, 0.5)',
+      'rgba(54, 162, 235, 0.5)',
+      ],
+      borderColor: [
+        'rgb(255, 99, 132)',
+        'rgb(255, 205, 86)',
+        'rgb(54, 162, 235)',
+      ],
+      borderWidth: 1
+  }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    },
+    plugins: {
+      title: {
+                display: true,
+                text: 'Most Played Moves'
+      }
+    }
+  }
+}  
+new Chart(ctx,config);
+new Chart(ctx2,config2);
+</script>
+  </body>
+</html>

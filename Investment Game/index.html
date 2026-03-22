@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Investment Game</title>
+  <link rel="icon" type="image/png" href="/icons/3-money.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div style = "text-align:center;">
+    <div id="head"><img id = "headimg" src="/icons/3-money.png"><h1>Investment Game</h1></div>
+    <span><p><button onclick="buyShare()">Space</button> to buy, <button onclick="sellShare()">Return</button> to sell</p></span>
+    <canvas id="game" width="1000" height="500" style="border:1px solid #000000; background-color: black;"></canvas><br>
+    <p id="netgain"></p>
+    <div id="stats">
+      <p id="price"></p>
+      <p id="bullet"> • </p>
+      <p id="shares"></p>
+      <p id="bullet"> • </p>
+      <p id="money"></p>
+      <p id="bullet"> • </p>
+      <p id="avgCost"></p>
+      
+    </div>  
+    <button id="buy" class="action buy" onclick="buyShare()">Buy</button>
+    <button id="sell" class="action sell" onclick="sellShare()">Sell</button>
+    <br></br>
+    <a href="/">Restart</a>
+    <p id="localhs"></p>
+  </div>
+  <h1 id="alert" class="alert"></h1>
+  <br>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title class="title"></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <button onclick="location.href='/'" class="send3">⬅</button>
+      <h1 id=roomnamedisplay></h1>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <form id="formN">
+          <input type="text" class="input" id="modalInput" placeholder="Write your username here...">
+          <button class="send" id="submitModal">⬆</button>
+        </form>
+      </div>
+    
+    </div>
+    <form id ="form">
+      <div class=form">
+        <input type="text" class="inputCHAT" id="input" placeholder="Write your message here...">
+        <button class="send" id="send">⬆</button>
+      </div>
+    </form>
+    
+    <div id="container">
+      <div id="chat-box"></div>
+      <div id="users">
+        <h2>Users: </h2>
+      
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js
+"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src = "client.js"> </script>
+  </body>
+</html>

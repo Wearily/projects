@@ -1,0 +1,31 @@
+.imgbox{
+	border: 1px solid black;
+  position: relative;
+  border-radius: 12px;
+  max-width: 75%;
+  margin: 12px;
+}
+.imgbox i {
+  position: absolute;
+  opacity: 0;
+  top: 1em;
+  right: 1em;
+  transition: opacity .2s;
+}
+
+.imgbox:hover i {
+  opacity: 1;
+  
+}
+.imgbox img {
+  max-width: 100%;
+  max-height: auto;
+  min-width: 0px;
+  align-content: center;
+}
+.imgbox h1 {
+  text-wrap: wrap;
+  overflow-wrap: normal;
+  text-align: center;
+  overflow-x: scroll;
+}

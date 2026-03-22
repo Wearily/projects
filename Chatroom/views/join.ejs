@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Enter A Room! | Chat</title>
+  </head>
+  <body>
+    
+    <h1>Welcome!</h1>
+    
+    <p>Enter a Room ID to start chatting</p>
+    <form action="/chat" method="GET">
+      <input type="text" id="input2" name="roomname" placeholder="Enter a room ID to join or create a room...">
+      <button id="send2">Join</button>
+      
+    </form>
+		
+
+    <h2 class="rmt">Rooms</h2>
+    <% if(data.length > 0) {%> 
+      <div id="allrooms" >
+        <% for(room of data) { %>
+          <div class="room" onclick="joinroom(this)"><p class="nora"> <%=room%></p></div>
+        <% } %>
+      </div>
+    <% }else{ %>
+      <p><i>There are no avalible rooms. You can create one above.</i></p>
+    <% } %>
+			
+    <script>
+			document.getElementById("input2").focus();
+      
+      function joinroom(e) {
+        console.log(e.firstChild)
+        window.location.href = "/chat?roomname="+e.firstChild.innerHTML.trim()
+      }
+		</script>
+  </body>
+  
+</html>

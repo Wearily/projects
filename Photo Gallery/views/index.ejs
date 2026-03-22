@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="imageBox.css">
+    <link rel="stylesheet" href="album.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" accept="image/*" name="ImgFile"><br>
+      <label>Name: </label><input type="text" name="ImgName" placeholder="Name" maxlength="250" required><br>
+      <label>Description: </label><input type="text" name="ImgDesc" placeholder="Description" maxlength="1000"><br>
+      <label>Location: </label><input type="text" name="ImgLoc" maxlength="50" placeholder="Location"><br>
+      
+
+      <label>Height (Optional): </label><input type="number" min="1" max="3500" name="ImgHeight" placeholder="Height"><br>
+      <label>Width (Optional): </label><input type="number" min="1" max="4500" name="ImgWidth" placeholder="Width"><br>
+      <input type="submit" value="Submit">
+    </form>
+
+		<div id= "album">
+		<% if (photos) { %>
+			<% for (var i = 0; i < photos.length; i++) { %>
+        <div class="imgbox" >
+					<h1 class="img-name" data-id=<%=photos[i]._id%> oninput="updateItem(this)" style="max-width: <%= photos[i].width %>px;" contenteditable="true"><%= photos[i].name %></h1><a href="/delete/<%= photos[i]._id %>"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></a>
+          
+					<img class="image" src= <%= photos[i].fileName %>  width= '<%= photos[i].width%>'  height=' <%= photos[i].height%>'>
+          <% if (photos[i].location != "") { %>
+            <p class="location" oninput="updateItem(this)" contenteditable="true">📍 <%= photos[i].location %> </p>
+					<% } %>
+          <% if (photos[i].description != "") { %>
+            <p class="description" oninput="updateItem(this)" contenteditable="true"> <%= photos[i].description %> </p>
+					<% } %>
+						
+				</div>
+		
+			<% } %> <!-- for loop -->
+		<% } %> <!-- if loop -->
+		</div>
+    
+  </body>
+
+</html>

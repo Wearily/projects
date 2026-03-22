@@ -1,0 +1,14 @@
+body {
+  font-family: Helvetica;
+
+}
+
+input[type="text"], input[type="number"] {
+  height: 35px;
+  border-radius: 12px;
+  border: none;
+  background-color: #ededed;
+  margin: 4px;
+  padding: 4px;
+  padding-left: 8px;
+}

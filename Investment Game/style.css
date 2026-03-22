@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/* body {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+} */
+
+/* body {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  min-height:100vh;
+  font-family: Helvetica, sans-serif
+} */
+
+body {
+  font-family: Helvetica, sans-serif
+}
+
+.action {
+  color: white;
+  height: 40px;
+  border: 2px white solid;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1000px;
+}
+.buy {
+  background-color: green;
+}
+.sell {
+  background-color: red;
+}
+#bullet {
+  margin-left:10px;
+  margin-right:10px;
+}
+canvas {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1000px;
+}
+#stats {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.alert {
+  display: none; /* Hidden by default */
+  opacity: 0%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  margin: 0;
+  /* padding-top: calc(25vh + 58px); /* Location of the box */ 
+  padding-top: calc(33vh); /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* color: forestgreen; */
+  font-weight: bold;
+  font-size: 9vw;
+  text-align: center;
+  animation: fade 1.5s ease-out 0s 1 normal backwards;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  pointer-events: none;
+}
+
+@keyframes fade {
+  0%   {opacity: 0%;}
+  66% {opacity: 100%;}
+  100% {opacity: 0%;}
+}
+
+@keyframes idle { 
+  100% {} 
+}
+
+.disabled {
+  background-color: lightgray;
+  color: black;
+}
+
+#netgain {
+  margin-bottom: 0px;
+}
+
+#head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#headimg {
+  height: 2em;
+}

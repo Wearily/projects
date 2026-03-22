@@ -1,0 +1,201 @@
+#chat-box{
+  border: none;
+  width: 70%;
+  height: calc(100% - 40px);
+	overflow-y:auto;
+}
+h1,h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 10px;
+}
+.input {
+  border-radius: 4px;
+  height: 20px;
+  width: calc(100% - 50px);
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #505050;
+  font-size: 16px;
+}
+.inputCHAT {
+  border-radius: 4px;
+  height: 20px;
+  width: calc(70% - 50px);
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #505050;
+  font-size: 16px;
+}
+#input2 {
+  margin-top: 5px;
+  border-radius: 4px;
+  height: 20px;
+  width: calc(100% - 85px);
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #505050;
+  font-size: 16px;
+}
+.form {
+  width:100%;
+}
+.send{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 0px solid #ffffff;
+  border-radius: 100px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 16px;
+  font-style: bolder;
+  margin-bottom: 0px;
+  align-items: center;
+}
+.send3{
+  display: inline;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 0px solid #ffffff;
+  border-radius: 100px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 16px;
+  font-style: bolder;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+@keyframes popO {
+  from {
+    background-color: white; 
+    color: white;
+  }
+  to {
+    background-color: #5266ff;
+  }
+}
+@keyframes popI {
+  from {
+    background-color: white;
+    color: white;
+  }
+  to {
+    background-color: #c9c9c9;
+    color: black;
+  }
+}
+#send2{
+  width: 60px;
+  height: 30px;
+  padding: 5px;
+  border: 0px solid #ffffff;
+  border-radius: 100px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 16px;
+  font-style: bolder;
+  margin-bottom: 0px;
+  align-items: center;
+}
+#send:active{
+  background-color: #ababab
+}
+#send2:active{
+  background-color: #ababab
+}
+.msg {
+  border-radius: 4px;
+  padding: 5px;
+  margin: 8px;
+	word-wrap:break-word;
+  
+}
+body {
+  margin: 10px;
+  font-family: sans-serif;
+}
+.in{
+  background-color: #c9c9c9;
+  animation-name: popI;
+  animation-duration: 0.4s;
+}
+.out{
+  color: white;
+  background-color: #5266ff;
+  animation-name: popO;
+  animation-duration: 0.4;
+  
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Show by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.25); /* Black w/ opacity */
+    
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: none;
+  width: 60%;
+  border-radius: 16px;
+}
+
+#users {
+  /*border: #bababa;*/
+  width: 30%;
+  height: calc(100% - 40px);
+	overflow-y:auto;
+  overflow-x:auto;
+  /*background-color: #bababa;*/
+  margin-left: 5px;
+}
+
+#container {
+  display: flex;
+}
+
+#allrooms {
+  display: flex;
+}
+.rmt {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.room {
+  display: flex;
+  border: 1px solid #505050;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 12.5%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 40px;
+}
+.room:hover {
+  background-color: dodgerblue;
+  color: white;
+  
+}
+
+.nora {
+  margin-left: 10px;
+  font-weight: bold;
+}

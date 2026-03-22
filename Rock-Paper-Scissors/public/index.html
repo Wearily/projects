@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div id="container">
+      <div id="display">
+        <div id = "player"></div>
+        <div id = "computer"></div>
+      </div>
+      <div id="alloptions">
+        <div id="scoreboard">
+          <div>
+            <p style="margin-top: 0px;margin-bottom: 0px;" id="outcome">-</p>
+            <p class="scores"><span id ="pscore" >0</span> - <span id="cscore"> 0</span> </p>
+          </div>  
+        </div>
+        <div id="controls">
+          <button id="rock" class="Rock" value="Rock">Rock</button>
+          <button id="paper" class="Paper" value="Paper">Paper</button>
+          <button id="scissors" class="Scissors" value="Scissors">Scissors</button>
+        </div>
+        <div id="options">
+          <p>First to: </p>
+          <p id="firstToDisplay">15</p>
+          <input oninput="changeSlider()" id="firstTo" type="range" min="10" max="30" value="15">
+        </div>
+      </div>
+    </div>
+    <br>
+    <a href="/data">Data</a>
+    <script src="game.js"></script>
+  </body>
+</html>
