@@ -30,6 +30,9 @@ This repository is mainly a collection of smaller projects and experiments. Quee
 - Browsable sections covering albums, live performances, interviews, and related archival content
 - Searchable, structured archive experience for exploring relationships across releases and performances
 - Standalone long-term project with its own dedicated repository and codebase
+
+---
+
 ### 1. **Chatroom** 💬
 **Language:** Node.js (JavaScript)  
 **Stack:** Express.js, Socket.io, EJS
